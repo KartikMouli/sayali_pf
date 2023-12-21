@@ -373,6 +373,63 @@ video {
 }
 
 
+
+#achs h2{
+  font-size: 35px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.achievements h3{
+  margin-bottom: 10px;
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Change from space-between to center */
+  align-items: center; /* Add align-items to center vertically */
+  text-align: center; /* Optional: Center-align text inside each achievement */
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.achievement-slide {
+  flex: 0 0 auto;
+  width: 350px;
+  padding: 50px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease-in-out;
+}
+
+.achievement-slide:hover {
+  transform: scale(1.1);
+}
+
+.achievement-slide h3 {
+  margin-top: 0;
+}
+
+.achievement-slide p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+
 .flash-card {
   width: 500px;
   background-color: var(--second-color);
