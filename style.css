@@ -384,16 +384,21 @@ video {
   justify-content: center;
 }
 
+.arc-img{
+  width: 25%;
+  height: 25%;
+  position: relative;
+}
+
 .achievements h3{
   margin-bottom: 10px;
 }
 
 .achievements {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; /* Change from space-between to center */
-  align-items: center; /* Add align-items to center vertically */
-  text-align: center; /* Optional: Center-align text inside each achievement */
+  justify-content: space-around; 
+  align-items: center; 
+  text-align: center; 
   padding-bottom: 25px;
   padding-top: 25px;
 }
@@ -407,7 +412,7 @@ video {
 
 .achievement-slide {
   flex: 0 0 auto;
-  width: 350px;
+  width: 400px;
   padding: 50px;
   margin: 10px;
   border: 1px solid #ccc;
